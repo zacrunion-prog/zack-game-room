@@ -1,0 +1,40 @@
+ZACK GAME ROOM — PASSO SUCCESSIVO
+
+Questo pacchetto è preparato per Cloudflare Workers.
+
+1. Vai su GitHub.
+2. Crea un repository vuoto chiamato:
+   zack-game-room
+
+3. Dentro il repository scegli:
+   Add file -> Upload files
+
+4. Carica TUTTI i file e le cartelle contenuti in questo pacchetto.
+   Non caricare lo ZIP come unico file: carica il CONTENUTO.
+
+5. Fai Commit changes.
+
+6. Torna nella schermata Cloudflare che dice:
+   "Select a repository"
+
+7. Seleziona il repository:
+   zack-game-room
+
+8. NON fare ancora il deploy se Cloudflare chiede di creare il
+   database D1: prima va creato il database e inserito il suo ID
+   in wrangler.jsonc.
+
+IMPORTANTE:
+Il repository deve contenere almeno:
+- package.json
+- wrangler.jsonc
+- schema.sql
+- src/index.ts
+- public/index.html
+
+Il server usa Cloudflare D1 per conservare i messaggi della stanza,
+quindi la partita non dipende dal PC di Alan.
+
+Dopo aver creato il repository, il prossimo passo è:
+CREARE IL DATABASE D1 "zack-game-room" E INSERIRE IL DATABASE ID
+NEL wrangler.jsonc.

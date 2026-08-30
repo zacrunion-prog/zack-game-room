@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS messages (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  room TEXT NOT NULL,
+  name TEXT NOT NULL,
+  role TEXT NOT NULL CHECK(role IN ('ALAN','MANLIO','MASTER')),
+  text TEXT NOT NULL,
+  kind TEXT NOT NULL DEFAULT 'chat',
+  ts INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_messages_room_id ON messages(room, id);
