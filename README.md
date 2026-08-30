@@ -13,4 +13,4 @@ D1 stores the shared game log so the PC of either player does not
 need to remain online.
 
 Before deployment, create a D1 database and replace the placeholder
-database_id in wrangler.jsonc. Apply schema.sql to the database.
+database_id: 6f0522e2-8674-4bff-ba65-67ff40e2ff1e in wrangler.jsonc. Apply schema.sql to the database.
